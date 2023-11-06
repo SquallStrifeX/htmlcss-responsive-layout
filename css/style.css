@@ -4,6 +4,12 @@
     box-sizing: content-box;
 }
 
+body{
+
+    font-family: 'Montserrat', sans-serif;
+
+}
+
 .container{
     max-width: 576px;
     margin: 0 auto;
@@ -12,6 +18,7 @@
 .row{
     display: flex;
 }
+
 
 .col66{
     width: 100%;
@@ -40,20 +47,74 @@ li{
     padding: 5px 12px;
     border-radius: 20px;
 }
+
+.title_main{
+    color: rgba(33,148,253,255);
+    text-align: left;
+    font-size: 25px;
+    margin-bottom: 20px;
+
+}
+
+.text_main{
+    line-height: 30px;
+}
+
+.pic_main{
+    color: rgba(33,148,253,255);
+    align-self: center;
+    font-size: 35px;
+    margin: 20px
+
+}
+
+.button_main{
+    background-color: rgba(0,132,253,255);
+    color: white;
+    font-weight: 600;
+    border-radius: 20px;
+    border: none;
+    padding: 8px 40px;
+    
+}
+
+.img{
+    width: 100%;
+    
+
+}
 /* COMMON */
 
 .color_white{
     color: white;
 }
 
-.bg_blue{
+.bg_header{
     background-color: rgba(0,132,253,255);
+}
+
+.bg_main{
+    background-color: rgba(181,221,255,255);
+    border-radius: 15px;
 }
 
 .padding_20{
     padding: 20px;
 }
 
+.padding-left_5{
+    padding-left: 5px;
+}
+.margin-top_20{
+    margin-top: 20px;
+}
+.margin-top_40{
+    margin-top: 40px
+}
+
+.margin-left_20{
+    margin-left: 20px;
+}
 .padding-left_40{
     padding-left: 40px;
 }
@@ -62,8 +123,20 @@ li{
     padding-right: 40px;
 }
 
+.padding_20_20_0_20{
+    padding: 20px 20px 0px 20px;
+}
+
+.margin_20{
+    margin: 20px;
+}
+
 .d_flex{
     display: flex;
+}
+
+.flex-wrap_wrap{
+    flex-wrap: wrap;
 }
 
 .justify-content_center{
@@ -72,6 +145,10 @@ li{
 
 .justify-content_flex-end{
     justify-content: flex-end
+}
+
+.flex-direction_column{
+    flex-direction: column;
 }
 
 .d_none{
@@ -84,6 +161,10 @@ li{
 
 .align-self_center{
     align-self: center;
+}
+
+.text-align_center{
+    text-align: center;
 }
 
 /* MEDIA QUERY */
@@ -100,6 +181,26 @@ li{
         max-width: 991px;
     }
     
+    .col66{
+        width: calc(100% / 3 * 2 - 40px);
+    }
+
+    .col33{
+        width: calc(100% / 3 - 40px);
+    }
+
+
+    .justify-content_center{
+        justify-content: flex-start;
+    }
+
+    .margin_20{
+        margin: 10px
+    }
+
+    .padding_20_20_0_20{
+        padding: 10px 10px 0px 10px;
+    }
 }
 
 @media  screen and (min-width: 992px) {
@@ -114,4 +215,13 @@ li{
     .d_show{
         display: none;
     }
+
+    .desktop-col66{
+        display: flex;
+    }
+    .img{
+        height: 80%;
+        align-self: flex-end;
+    }
+
 }
