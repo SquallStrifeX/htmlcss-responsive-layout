@@ -11,7 +11,7 @@ body{
 }
 
 .container{
-    max-width: 576px;
+    max-width: 100%;
     margin: 0 auto;
 }
 
@@ -30,6 +30,10 @@ body{
 
 .col50{
     width: 50%;
+}
+
+.col500{
+    width: 100%;
 }
 
 ul{
@@ -56,8 +60,23 @@ li{
 
 }
 
+.title_main2{
+    color:white;
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 40px;
+
+}
+
 .text_main{
     line-height: 30px;
+}
+
+.text_main2{
+    color: white;
+    padding: 0px 40px 40px 40px;
+    line-height: 20px;
+    font-size: 12px;
 }
 
 .pic_main{
@@ -80,13 +99,29 @@ li{
 
 .img{
     width: 100%;
-    
+}
 
+.img2{
+    width: 80%;
+    align-self: center;
+    
+}
+
+.arrow_back{
+    background-color: rgba(151,146,228,255);
+    border-radius: 20px;
+    padding: 15px 10px;
+    margin-bottom: 20px;
+    
 }
 /* COMMON */
 
 .color_white{
     color: white;
+}
+
+.color_black{
+    color: black;
 }
 
 .bg_header{
@@ -98,6 +133,15 @@ li{
     border-radius: 15px;
 }
 
+.bg_main2{
+    background-color: rgba(151,146,228,255);
+}
+
+.bg_white{
+    background-color: white;
+    border-radius: 20px;
+    margin: 20px;
+}
 .padding_20{
     padding: 20px;
 }
@@ -190,9 +234,9 @@ li{
     }
 
 
-    .justify-content_center{
+    /* .col33.justify-content_center{
         justify-content: flex-start;
-    }
+    } */
 
     .margin_20{
         margin: 10px
@@ -222,6 +266,27 @@ li{
     .img{
         height: 80%;
         align-self: flex-end;
+    }
+
+    .pino{
+        padding: 100px
+
+    }
+
+    .pinuzzo{
+        width: 40%;
+    }
+
+    .col500{
+        width: calc(50% - 20px);
+        justify-content: flex-end;
+    }
+
+    .bg_white{
+        justify-content: flex-end;
+        align-self: flex-end;
+        flex-direction: column;
+        margin-top: 100px;
     }
 
 }
